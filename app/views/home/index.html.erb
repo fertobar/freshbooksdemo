@@ -1,0 +1,21 @@
+<h2>Freshbooks API access Demo Using Token</h2>
+
+<table>
+  <thead>
+  <tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Email address</th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @clients.each do |client| %>
+      <tr>
+        <td><%= client.first_name  %></td>
+        <td><%= client.last_name %></td>
+        <td><%= client.email%></td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
